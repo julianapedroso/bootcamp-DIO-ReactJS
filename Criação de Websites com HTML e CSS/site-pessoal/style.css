@@ -1,0 +1,95 @@
+:root {
+    --background: #ffd200;
+    --primary-color: #1f1f1d;
+    --primary-light-color: #333331;
+    --secondary-color: #f37447;
+    --contrast-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.cover {
+    width: 100%;
+}
+
+.container-title {
+    background: var(--primary-color);
+}
+
+#devisor {
+    height: 10vh;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2%;
+}
+
+.post-title {
+    font-size: 1.3rem;
+    padding-left: 3%;
+    color: var(--secondary-color);
+}
+
+.img-post1, .img-post2, .img-post3 {
+    width: 35%;
+    margin-bottom: 3%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 4px;
+}
+
+.post-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5% 3%;
+}
+
+.post-content:last-child {
+    line-height: 1.5rem;
+    padding-left: 4%;
+}
+
+.post-content:first-child {
+    line-height: 1.5rem;
+    padding-right: 4%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: var(--primary-color);
+    height: 15%;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+h4 {
+    margin-bottom: 1rem;
+    color: var(--background);
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+footer a {
+    color: var(--contrast-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--background);
+    cursor: pointer;
+    transform: 500ms;
+    font-size: 1.1rem;
+}
