@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-grow</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            /* a propriedade justify-content: center; só vai afetar o flex-grow: 0;*/
+            justify-content: center;
+            border: 1px solid black;
+            max-width: 300px;
+        }
+
+        .flex-item {
+            background-color: palevioletred;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        .fg-0 {
+            flex-grow: 0;
+        }
+
+        .fg-1 {
+            flex-grow: 1;
+        }
+
+        .fg-2 {
+            flex-grow: 2;
+        }
+
+        .fg-3 {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex-grow -->
+    <!-- Define a proporcionalidade de crescimentos dos itens, respeitando o tamanho de seus conteúdos internos
+    *OBS: não irá funcionar caso tenhamos adicionado justify-content ao nosso flex container
+    Tipos de alinhamento:
+        - center
+        - stretch
+        - flex-start
+        - flex-end
+        - baseline
+    -->
+    
+    <h3>flex-grow 0</h3>
+    <div class="flex-container">
+        <div class="flex-item fg-0">A</div>
+        <div class="flex-item fg-0">B</div>
+        <div class="flex-item fg-0">C</div>
+        <div class="flex-item fg-0">D</div>
+    </div>
+
+    <h3>flex-grow 1</h3>
+    <div class="flex-container">
+        <div class="flex-item fg-1">A</div>
+        <div class="flex-item fg-2 purple">B</div>
+        <div class="flex-item fg-1">C</div>
+        <div class="flex-item fg-1">D</div>
+    </div>
+
+    <h3>flex-grow 2</h3>
+    <div class="flex-container">
+        <div class="flex-item fg-0">A</div>
+        <div class="flex-item fg-0">B</div>
+        <div class="flex-item fg-2 purple">C</div>
+        <div class="flex-item fg-2 purple">D</div>
+    </div>
+
+    <h3>flex-grow 3</h3>
+    <div class="flex-container">
+        <div class="flex-item fg-1 purple">A</div>
+        <div class="flex-item fg-0">B</div>
+        <div class="flex-item fg-3 purple">C</div>
+        <div class="flex-item fg-0">D</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-shrink</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+        }
+    
+        .flex-item {
+            background-color: chartreuse;
+            font-size: 18px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .shrink-1 {
+            flex-shrink: 1;
+        }
+
+        .fg-1 {
+            flex-grow: 1;
+        }
+
+        .shrink-0 {
+            flex-shrink: 0;
+            flex-basis: 0;
+        }
+
+        .shrink-2 {
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+        .shrink-3 {
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- flex-shrink -->
+    <!-- É a propriedade que estabelece a capacidade de redução ou compressão do tamanho de um item
+    -->
+
+<h3>flex-shrink 1</h3>
+<div class="flex-container">
+    <div class="flex-item shrink-1 fg-1">A</div>
+    <div class="flex-item shrink-1 fg-1">B</div>
+    <div class="flex-item shrink-1 fg-1">C</div>
+    <div class="flex-item shrink-1 fg-1">D</div>
+    <div class="flex-item shrink-1 fg-1">E</div>
+</div>
+
+<h3>flex-shrink com mais textos</h3>
+<div class="flex-container">
+    <div class="flex-item shrink-1 fg-1">A</div>
+    <div class="flex-item shrink-1 fg-1">Lorem ipsum dolor</div>
+    <div class="flex-item shrink-1 fg-1">C</div>
+    <div class="flex-item shrink-1 fg-1">D</div>
+    <div class="flex-item shrink-1 fg-1">E</div>
+</div>
+
+<h3>flex-shrink 0 e flex-basis 0</h3>
+<div class="flex-container">
+    <div class="flex-item shrink-0 fg-1">A</div>
+    <div class="flex-item shrink-0 fg-1">Lorem ipsum dolor</div>
+    <div class="flex-item shrink-0 fg-1">C ipsum</div>
+    <div class="flex-item shrink-0 fg-1">D</div>
+    <div class="flex-item shrink-0 fg-1">E</div>
+</div>
+
+<h3>flex-shrink mix e flex-basis mix</h3>
+<div class="flex-container">
+    <div class="flex-item shrink-1 fg-1">A</div>
+    <div class="flex-item shrink-3 fg-1">Lorem ipsum dolor</div>
+    <div class="flex-item shrink-0 fg-1">C lorem</div>
+    <div class="flex-item shrink-3 fg-1">D</div>
+    <div class="flex-item shrink-1 fg-1">E</div>
+</div>
+    
+</body>
+</html>

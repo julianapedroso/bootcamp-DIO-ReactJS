@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-basis</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            max-width: 500px;
+            border: 1px solid black;
+        }
+
+        .flex-item {
+            background-color: coral;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .basis-auto {
+            flex-basis: auto;
+        }
+
+        .fg-1 {
+            flex-grow: 1;
+        }
+
+        .fg-2 {
+            flex-grow: 2;
+        }
+
+        .basis-0 {
+            flex-basis: 0;
+        }
+
+        .w-100 {
+            flex-basis: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- flex-basis -->
+    <!-- É a propriedade que estabelece o tamanho inicial do item antes da distribuição de espaço restante dentro dele, usando como base o conteúdo interno disposto
+    Valores possíveis:
+        - auto: caso o item não tenha tamanho, este será proporcional ao conteúdo do item
+        - px, %, em, ... são valores exatos previamente definidos
+        - 0: terá relação com a definição do flex-grow
+    -->
+
+    <h3>flex-basis auto</h3>
+    <div class="flex-container">
+        <div class="flex-item basis-auto fg-1">A</div>
+        <div class="flex-item basis-auto fg-1">BBB</div>
+        <div class="flex-item basis-auto fg-1">C</div>
+        <div class="flex-item basis-auto fg-2">DEF</div>
+    </div>
+
+    <h3>flex-basis 0</h3>
+    <div class="flex-container">
+        <div class="flex-item basis-0 fg-1">AAAAA</div>
+        <div class="flex-item basis-0 fg-1">BBB</div>
+        <div class="flex-item basis-0 fg-1">C</div>
+        <div class="flex-item basis-0 fg-1">DEF</div>
+    </div>
+
+    <h3>flex-basis + width</h3>
+    <div class="flex-container">
+        <div class="flex-item w-100 fg-2">A</div>
+        <div class="flex-item w-100 fg-2">BBB</div>
+        <div class="flex-item w-100 fg-2">C</div>
+        <div class="flex-item w-100 fg-2">DEF</div>
+    </div>
+    
+</body>
+</html>
