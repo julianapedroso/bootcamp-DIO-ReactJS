@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+
+    <title>Flex Turismos</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container menu">
+            <div>
+                <img id="logo" src="./assets/icon-1.png" alt="Logo de um barco com ondas">
+            </div>
+            <ul class="list-items">
+                <li><a href="#about-us">Quem Somos</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#plans">Planos</a></li>
+        </div>
+        </ul>
+    </header>
+
+    <div class="flex-container presentation">
+        <div class="text-presentation">
+            <h1>Flex <br>Turismos</h1>
+            <p>O melhor serviço para você!</p>
+            <a class="btn" href="">Saiba Mais!</a>
+        </div>
+
+        <div id="banner">
+            <div><img src="./assets/0-main.png" alt="banner de apresentação"></div>
+        </div>
+    </div>
+
+    <div class="flex-container" id="about-us">
+        <div class="wrapper">
+            <h2>Quem somos</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+            <br>
+            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+
+        <div>
+            <img src="./assets/1-quem-somos.png" alt="balcão de atendimento">
+        </div>
+    </div>
+
+    <div class="services-container">
+        <div class="flex-container" id="services">
+            <div>
+                <h2>Serviços</h2>
+            </div>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <div><img src="./assets/icon-2.png" alt="hospedagens"></div>
+                    <p>Hospedagens</p>
+                    <a href="#" onclick="handleClick()">Comprar Agora</a>
+                </div>
+
+                <div class="service-item">
+                    <div><img src="./assets/icon-1.png" alt="pacote de viagens"></div>
+                    <p>Pacotes de viagens</p>
+                    <a href="#" onclick="handleClick()">Comprar Agora</a>
+                </div>
+
+                <div class="service-item">
+                    <div><img src="./assets/icon-3.png" alt="roteiros personalizados"></div>
+                    <p>Roteiros personalizados</p>
+                    <a href="#" onclick="handleClick()">Comprar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container" id="plans">
+        <div>
+            <h2>Planos</h2>
+        </div>
+        <div class="list-plans">
+            <div class="plan-item">
+                <h3>Basic</h3>
+                <ul>
+                    <li>Suporte 24h</li>
+                    <li>Serviços de quarto</li>
+                    <li>Guia turístico</li>
+                </ul>
+                <a class="btn" href="#">Saiba Mais!</a>
+            </div>
+
+            <div class="plan-item">
+                <h3>Standard</h3>
+                <ul>
+                    <li>Suporte 24h</li>
+                    <li>Serviços de quarto</li>
+                    <li>Guia turístico</li>
+                    <li>Roteiro de trilhas</li>
+                    <li>Serviço personalizado</li>
+                </ul>
+                <a class="btn" href="#">Saiba Mais!</a>
+            </div>
+
+            <div class="plan-item">
+                <h3>Premium</h3>
+                <ul>
+                    <li>Suporte 24h</li>
+                    <li>Serviços de quarto</li>
+                    <li>Guia turístico</li>
+                    <li>Roteiro de trilhas</li>
+                    <li>Serviço personalizado</li>
+                    <li>Área Vip</li>
+                </ul>
+                <a class="btn" href="#">Saiba Mais!</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="copy">
+        <p>2021© Copyright. Todos os Direitos Reservados.</p>
+        <p>
+            Aplicação desenvolvida com ❤️ por
+            <a href="https://github.com/julianapedroso" target="_blank" rel="noreferrer">
+                Juliana Pedroso
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
