@@ -21,7 +21,7 @@ https://projeto-darkmode-dio.surge.sh/
   - [x] getElementById
   - [x] classList.contains
   - [x] classList.toggle
-- [x] Responsividade para todas as telas.
+- [x] Responsividade para todas as telas
 
 ### 💻 Tecnologias:
 As seguintes tecnologias foram usadas na construção do projeto:
