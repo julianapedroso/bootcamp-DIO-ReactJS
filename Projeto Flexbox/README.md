@@ -22,7 +22,7 @@ http://projeto-flexbox-dio.surge.sh/
   - [x] flex-direction
   - [x] align-items
   - [x] flex-shrink
-- [x] Responsividade para todas as telas.
+- [x] Responsividade para todas as telas
 
 ### 💻 Tecnologias:
 As seguintes tecnologias foram usadas na construção do projeto:
