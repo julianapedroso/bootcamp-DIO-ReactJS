@@ -29,4 +29,3 @@ const body = document.getElementById('body');
 const footer = document.getElementById('copy');
 
 button.addEventListener('click', changeMode);
-console.log(body.classList);
