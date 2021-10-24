@@ -13,7 +13,7 @@
 <hr />
 
 ### ☁️ Deploy:
-http://projeto-flexbox-dio.surge.sh/
+https://projeto-darkmode-dio.surge.sh/
 
 ### ✨ Funcionamento:
 - [x] Foram aplicadas as seguintes propriedades da manipulação da DOM:
@@ -43,7 +43,9 @@ $ cd Projeto\ Dark\ Mode
 
 Passo 3. Abra o projeto em sua IDE preferida.
 ```
+### 🎉 Resultado:
 
+![darkmode](https://user-images.githubusercontent.com/68782453/138576293-b942e369-0a8e-4bd9-a3d5-55b70e1c0bf8.gif)
 
 
 
