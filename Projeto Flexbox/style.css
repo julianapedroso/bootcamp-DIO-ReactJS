@@ -133,17 +133,14 @@ div img {
 }
 
 #about-us img {
-  min-width: 320px;
+  min-width: 500px;
+  width: 100%;
   margin: auto;
 }
 
 #about-us .wrapper {
   padding-left: 60px;
   color: var(--dark-primary-color);
-}
-
-#about-us img {
-  min-width: 320px;
 }
 
 .services-container {
@@ -404,5 +401,9 @@ div img {
   #services h2,
   #plans h2 {
     font-size: 1.5rem;
+  }
+
+  #about-us img {
+    min-width: 320px;
   }
 }
